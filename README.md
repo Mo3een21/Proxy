@@ -13,10 +13,13 @@ Retrieves and saves files locally.
 Displays HTTP responses.
 Supports IPv4 connections.
 Optionally opens the requested page in a web browser.
-HTTP Proxy Overview
+HTTP Proxy Overview:
 The HTTP proxy client implemented in this project follows a simple workflow:
+
 <--Extra Method : removeLastChar() -->
 It removes the last char of the string.
+
+
 Parses the URL provided by the user.
 Checks if the requested file exists locally.
 If found, serves the file from the local filesystem.
@@ -25,19 +28,25 @@ Receives the HTTP response from the server.
 Saves the file locally.
 Displays the response and file size.
 Optionally opens the saved file in a web browser.
+
 <--HTTP Request Structure-->
 An HTTP request consists of a header and, optionally, a body.
 The header includes the request method, request URI, and HTTP version.
+
 Example:
- GET /index.html HTTP/1.0\r\nHost: www.example.com\r\n\r\n.
-Usage
+GET /index.html HTTP/1.0\r\nHost: www.example.com\r\n\r\n.
+
+Usage:
 Compile the proxy using the provided command:
 gcc -Wall -o cproxy cproxy.c
+
 Run the proxy with the following command-line usage:
+
 bash:
 ./cproxy <URL> [-s]
 <URL>: Specifies the URL of the requested object in the format http://hostname[:port]/filepath.
 -s: Optional flag to open the retrieved page in a web browser.
+
 Error Handling
 Utilizes perror() and herror() for system call errors.
 Prints usage error message: "Usage: cproxy <URL> [-s]".
