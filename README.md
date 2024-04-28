@@ -43,8 +43,9 @@ gcc -Wall -o cproxy cproxy.c
 Run the proxy with the following command-line usage:
 
 bash:
-./cproxy <URL> [-s]
-<URL>: Specifies the URL of the requested object in the format http://hostname[:port]/filepath.
+./cproxy [URL] [-s]
+
+[URL]: Specifies the URL of the requested object in the format http://hostname[:port]/filepath.
 -s: Optional flag to open the retrieved page in a web browser.
 
 Error Handling
