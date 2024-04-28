@@ -1,6 +1,4 @@
-# Proxy-Server
-This is a proxy server simulation done in linux operating system.
-
+# Proxy
 Creator: [Moeen Abu Katish]
 
 <--Introduction-->
